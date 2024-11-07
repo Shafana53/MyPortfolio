@@ -34,13 +34,6 @@ export default function Portfolio() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const fadeInUp = {
-    initial: { opacity: 0, y: 60 },
-    animate: { opacity: 1, y: 0 },
-    // Move the transition outside of animate
-    transition: { duration: 0.6 }
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white font-sans">
       <motion.div
